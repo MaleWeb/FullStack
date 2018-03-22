@@ -35,6 +35,7 @@ npm run dev
 ```
 3.将fullstack.sql文件部署到本地Mysql数据库（不会的可以查看资料）
 http://blog.csdn.net/u013235478/article/details/50623693
+
 4. 访问页面
 
 http://127.0.0.1:7001

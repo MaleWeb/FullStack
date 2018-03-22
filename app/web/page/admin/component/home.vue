@@ -1,6 +1,8 @@
 <template>
   <div id="admin-home">
-    <h4 style="text-indent:20px;">Welcome !!!</h4>
+    <h3>FullStack社区</h3>
+    <h4>可以加入一起研究啊~~~</h4>
+    <img src="../assets/images/qq.jpg" alt="">
   </div>
 </template>
 <style>
@@ -63,3 +65,10 @@ export default {
 };
 </script>
 
+<style lang="less">
+  #admin-home{
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+</style>

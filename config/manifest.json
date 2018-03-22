@@ -17,9 +17,11 @@
   "home/pages/my.js": "/public/js/home/pages/my.js",
   "home/component/footer.js": "/public/js/home/component/footer.js",
   "img/bg.jpg": "/public/img/bg.jpg",
+  "img/banner.png": "/public/img/banner.png",
   "font/element-icons.ttf": "/public/font/element-icons.ttf",
   "font/element-icons.woff": "/public/font/element-icons.woff",
   "img/loading.gif": "/public/img/loading.gif",
+  "img/qq.jpg": "/public/img/qq.jpg",
   "vendor.js": "/public/js/vendor.js",
   "deps": {
     "admin/component/home.js": {
