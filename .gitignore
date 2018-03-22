@@ -1,0 +1,17 @@
+.idea
+.idea/
+.DS_Store
+node_modules/
+.project
+src/config/*.tmp
+src/config/env.js
+npm-debug.log
+package-lock.json
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.vscode/
+logs/
+public/
+run/*
+run/

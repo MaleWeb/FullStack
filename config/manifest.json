@@ -1,0 +1,156 @@
+{
+  "admin/component/home.js": "/public/js/admin/component/home.js",
+  "js/chunk/0.js": "/public/js/chunk/0.js",
+  "admin/component/loginLogs.js": "/public/js/admin/component/loginLogs.js",
+  "admin/component/main.js": "/public/js/admin/component/main.js",
+  "admin/component/opeLogs.js": "/public/js/admin/component/opeLogs.js",
+  "admin/component/user.js": "/public/js/admin/component/user.js",
+  "admin/index.js": "/public/js/admin/index.js",
+  "home/component/detail.js": "/public/js/home/component/detail.js",
+  "admin/component/login.js": "/public/js/admin/component/login.js",
+  "home/component/header.js": "/public/js/home/component/header.js",
+  "home/component/list.js": "/public/js/home/component/list.js",
+  "home/index.js": "/public/js/home/index.js",
+  "home/pages/article.js": "/public/js/home/pages/article.js",
+  "home/pages/edit.js": "/public/js/home/pages/edit.js",
+  "home/pages/home.js": "/public/js/home/pages/home.js",
+  "home/pages/my.js": "/public/js/home/pages/my.js",
+  "home/component/footer.js": "/public/js/home/component/footer.js",
+  "img/bg.jpg": "/public/img/bg.jpg",
+  "font/element-icons.ttf": "/public/font/element-icons.ttf",
+  "font/element-icons.woff": "/public/font/element-icons.woff",
+  "img/loading.gif": "/public/img/loading.gif",
+  "vendor.js": "/public/js/vendor.js",
+  "deps": {
+    "admin/component/home.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/admin/component/home.js"
+      ],
+      "css": []
+    },
+    "js/chunk/0.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/chunk/0.js"
+      ],
+      "css": []
+    },
+    "admin/component/loginLogs.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/admin/component/loginLogs.js"
+      ],
+      "css": []
+    },
+    "admin/component/main.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/admin/component/main.js"
+      ],
+      "css": []
+    },
+    "admin/component/opeLogs.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/admin/component/opeLogs.js"
+      ],
+      "css": []
+    },
+    "admin/component/user.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/admin/component/user.js"
+      ],
+      "css": []
+    },
+    "admin/index.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/admin/index.js"
+      ],
+      "css": []
+    },
+    "home/component/detail.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/home/component/detail.js"
+      ],
+      "css": []
+    },
+    "admin/component/login.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/admin/component/login.js"
+      ],
+      "css": []
+    },
+    "home/component/header.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/home/component/header.js"
+      ],
+      "css": []
+    },
+    "home/component/list.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/home/component/list.js"
+      ],
+      "css": []
+    },
+    "home/index.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/home/index.js"
+      ],
+      "css": []
+    },
+    "home/pages/article.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/home/pages/article.js"
+      ],
+      "css": []
+    },
+    "home/pages/edit.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/home/pages/edit.js"
+      ],
+      "css": []
+    },
+    "home/pages/home.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/home/pages/home.js"
+      ],
+      "css": []
+    },
+    "home/pages/my.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/home/pages/my.js"
+      ],
+      "css": []
+    },
+    "home/component/footer.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/home/component/footer.js"
+      ],
+      "css": []
+    },
+    "vendor.js": {
+      "js": [
+        "/public/js/vendor.js"
+      ],
+      "css": []
+    }
+  },
+  "info": {
+    "publicPath": "/public/",
+    "buildPath": "\\public",
+    "mapped": true
+  }
+}

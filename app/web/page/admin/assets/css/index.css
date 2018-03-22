@@ -1,0 +1,62 @@
+html,body{
+  margin:0;
+  padding:0;
+  height:100%;
+}
+#admin .el-header, .el-footer {
+  background-color: #31364a;
+  color: #fff;
+  line-height: 60px;
+}
+
+#admin .el-aside {
+  color: #333;
+  text-align: center;
+  background-color:#f5f7fa;
+}
+#admin .el-main {
+  background-color: #fff;
+  color: #333;
+  padding:0;
+}
+#admin{
+  height:100%;
+  overflow:hidden;
+}
+body #admin > .el-container {
+  width:100%;
+  height:100%;
+}
+#admin-user .admin-user-content .el-table th{
+  background-color:#f6f8f9;
+}
+#admin-user .admin-user-content .el-table{
+  position:absolute;
+  width:100%;
+  bottom:40px;
+  top:0;
+}
+#admin-user .admin-user-content .el-table .el-table__body-wrapper{
+  position:absolute;
+  top:48px;
+  bottom:0;
+  overflow-y:auto;
+  padding-right:18px;
+}
+
+.topmenu{
+  width:100px;
+  float:right;
+  background-color:#31364a!important;     
+}
+.topmenu .el-submenu .el-menu-item{
+  min-width:100px;
+}   
+.topmenu .el-menu--horizontal .el-submenu .el-submenu__title{
+  border-bottom:none!important;
+  color:#fff!important; 
+}
+.topmenu .el-menu--horizontal .el-submenu .el-submenu__title:hover{
+  background-color:#31364a!important;
+}
+
