@@ -1,5 +1,5 @@
-##  FullStack社区开源框架 
-FullStack_Cli v2.01 基于阿里Node框架——Egg.js  结合Vue/Wepack 实现多页面服务端渲染同构工程
+##  FullStack_Cli v2.0.1
+FullStack_Cli是一个开源的全栈社区框架, 基于阿里Node框架——Egg.js  结合Vue/Wepack 实现多页面服务端渲染同构工程
 ## Frame version
 - Egg.js："^2.1.0"
 - Node.js :">=6.0.0"
