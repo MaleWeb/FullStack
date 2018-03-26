@@ -1,6 +1,6 @@
 {
   "name": "FullStack",
-  "version": "4.0.0",
+  "version": "2.0.1",
   "description": "全栈社区",
   "scripts": {
     "debug": "egg-bin debug",
