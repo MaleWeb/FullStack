@@ -39,7 +39,9 @@ export default {
       }
     };
   },
-  mounted() {},
+  mounted() {
+    
+  },
   methods: {
     getToken() {
       return this.$util.getCookie("csrfToken");
@@ -91,7 +93,6 @@ export default {
   text-align: center;
   padding-bottom: 20px;
   font-size: 30px;
-  color: #fff;
 }
 #admin-login .admin-login-main .el-form-item__label {
   color: #fff;

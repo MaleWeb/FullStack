@@ -1,5 +1,7 @@
 module.exports = (app)=>{
-  // app.post('/sigin', app.controller.sigin.index)
-  app.get('/classify', app.controller.home.main.classify)
-  app.get('/front/detail',app.controller.home.main.detail)
+  // 评论
+  app.router.resources('comment','/api/comment', app.controller.home.comment);
+  app.router.resources('collection','/api/collection', app.controller.home.collection);
+  app.router.resources('library','/api/library', app.controller.home.library);
+  app.router.resources('myarticle', '/api/myarticle', app.controller.home.myarticle)
 }

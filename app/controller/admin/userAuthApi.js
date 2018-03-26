@@ -1,29 +1,51 @@
 const Controller = require('egg').Controller;
 
-class AppController extends Controller {
-  async index() {
-    // await this.ctx.render('admin/index.js',{
-    //   url: this.ctx.url.replace(/\/admin/, '')
-    // });
-    await this.ctx.renderClient('admin/index.js');
-  }
-  async destroy() {
+/**
+ * index,create,show,update,destory
+ * 获取所有列表和分页 index get
+ * 创建 create post
+ * 获取某一个 show get
+ * 更新 update put
+ * 删除 destory delete
+ */
+class UserAuthApiController extends Controller {
+  async index () {
     const { ctx, service } = this;
-    // const auth = await service.common.user.getAuth();
-    ctx.body = await service.admin.main.delete();
-    if(ctx.body.status){
-      ctx.helper.insertLog(service,ctx,2,'删除用户');
+    const authResult = await service.admin.roleApi.getApis(ctx.query);
+    const auth = await service.admin.api.getApis(ctx.session.user);
+    auth.map(item => {
+        item.isSelect = false;
+        for (let i = 0; i < authResult.length; i ++) {
+            if (authResult[i].id === item.id) {
+                item.isSelect = true;
+                authResult.splice(i, 1);
+                break;
+            }
+        }
+    })
+    if (authResult) {
+        ctx.body = {
+            data: auth,
+            status: true
+        }
+        // ctx.helper.insertLog(service,ctx,2,'获取用户授权接口');
+    } else {
+        ctx.body = {
+            data: [],
+            status: false,
+            message: '未找到角色对应的接口'
+        }
     }
+    
   }
-  async updateRoles() {
-    const { ctx, service } = this;
-    ctx.body = await service.admin.main.updateRoles();
-    if(ctx.body.status){
-      ctx.helper.insertLog(service,ctx,2,'更改用户角色');
-    }
+  async create () {
+
   }
-  async updateuser () {
+  async update () {
     const { ctx, service } = this;
+    // console.log(ctx.session);
+    const apis = await service.common.user.checkApi(ctx)
+    const auth = await service.common.user.getAuth(ctx.session.user);
     const body = ctx.request.body;
     if (body.user_name && body.role_id && body.id) {
       const result = await service.admin.auth.updateUser(body);
@@ -47,7 +69,7 @@ class AppController extends Controller {
       }
     }
   }
-  async deleteUser () {
+  async destroy () {
     const { ctx, service } = this;
     const body = ctx.request.body;
     if (body.id) {
@@ -70,8 +92,7 @@ class AppController extends Controller {
         success: false
       }
     }
-    
   }
 }
 
-module.exports = AppController;
+module.exports = UserAuthApiController;

@@ -35,12 +35,24 @@ npm run dev
 ```
 3.将fullstack.sql文件部署到本地Mysql数据库（不会的可以查看资料）
 http://blog.csdn.net/u013235478/article/details/50623693
-
 4. 访问页面
 
 http://127.0.0.1:7001
 ![image](https://note.youdao.com/yws/public/resource/f68ed21e583d37e43585d8909f1aeff8/xmlnote/ED3E5B19437A41A39FBE88771045F204/2976)
 ![image](https://note.youdao.com/yws/public/resource/f68ed21e583d37e43585d8909f1aeff8/xmlnote/D05E67D398934EF9BBB647FA6F17F015/2995)
+
+==**新增加功能**==（2018-3-26 18：31）
+
+- 加入文章系统
+![image](https://note.youdao.com/yws/public/resource/2124adc308b8796f0e4adbab1f8095ac/xmlnote/9F4F82FF61F1491685F00FBA04661100/720)
+
+- 加入角色权限
+![image](https://note.youdao.com/yws/public/resource/2124adc308b8796f0e4adbab1f8095ac/xmlnote/207602BC86FF47CF9DC9A95CA6116A05/714)
+![image](https://note.youdao.com/yws/public/resource/2124adc308b8796f0e4adbab1f8095ac/xmlnote/256AA3086F244489831A5DD2B898F85F/724)
+- 加入评论系统列表
+![image](https://note.youdao.com/yws/public/resource/2124adc308b8796f0e4adbab1f8095ac/xmlnote/205DADF1AB55457BB6DE288AA8C98598/722)
+- 细化操作日志
+
 ## Reference documents
 - [Egg](http://eggjs.org/)
 - [easywebpack](http://hubcarl.github.io/easywebpack/webpack/)

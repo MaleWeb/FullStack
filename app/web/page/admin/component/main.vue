@@ -75,6 +75,16 @@ export default {
           icon:'el-icon-share'
         },
         {
+          index:'/article',
+          title:'文章',
+          icon:'el-icon-edit'
+        },
+        {
+          index:'/comment',
+          title:'评论',
+          icon:'el-icon-star-off'
+        },
+        {
           index:'allLog',
           title:'日志',
           icon:'el-icon-document',

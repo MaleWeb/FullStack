@@ -10,22 +10,24 @@ module.exports = (options, app) => {
             }
             await next()
         } catch (err) {
-            const code = {
-                400: '请求错误',
-                401: '没有权限',
-                403: '禁止访问',
-                404: '资源不存在',
-                406: '请求的格式不存在',
-                410: '资源被永久删除',
-                422: '创建一个对象时发生验证错误',
-                500: '服务器发生错误'
-            }
-            app.emit('error', err, this)
+            app.emit('error', err, this);
+            const status = err.status || 500
+            // 生产环境时 500 错误的详细错误内容不返回给客户端，因为可能包含敏感信息
+            const error = status === 500 && app.config.env === 'prod' ?
+                'Internal Server Error' :
+                err.message
+            console.log("_______________________________________error____________________________________________")
+            console.log(err)
+            // 从 error 对象上读出各个属性，设置到响应中
             ctx.body = {
-                error: code[ctx.status]
+                status: false,
+                error: error
             }
-            if (ctx.status === 422) {
-                ctx.body.detail = err.errors
+            if (status === 422) {
+                ctx.body = {
+                    status: false,
+                    error: err.errors
+                }
             }
             ctx.status = 200
         }

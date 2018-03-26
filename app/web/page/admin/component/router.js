@@ -7,6 +7,8 @@ import User from './user';
 import Login from './login';
 import LoginLog from './loginLogs';
 import opeLog from './opeLogs';
+import Comment from './comment';
+import Article from './article';
 
 Vue.use(VueRouter);
 
@@ -27,6 +29,12 @@ const router = new VueRouter({
         }, {
           path: '/user',
           component: User
+        }, {
+          path: '/comment',
+          component: Comment
+        }, {
+          path: '/article',
+          component: Article
         }, {
           path: '/loginLogs',
           component: LoginLog

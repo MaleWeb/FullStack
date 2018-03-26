@@ -1,5 +1,5 @@
 <template>
-  <div id="admin-user">
+  <div id="admin-user" v-loading="loading">
     <div class="admin-user-search">
       <el-form size="mini" :inline="true" :model="searchForm" class="admin-search-form">
         <el-form-item label="记录ID" prop="id">
@@ -57,7 +57,8 @@ export default {
       pageSize:10,
       total:0,
       // 角色列表
-      roleList:[]
+      roleList:[],
+      loading:false
     };
   },
   mounted() {
@@ -78,6 +79,7 @@ export default {
     },
     getLogList() {
       let that = this;
+      this.loading = true;
       this.$fetch(`/api/logs`,{
         id:this.searchForm.id,
         user_name:this.searchForm.user_name,
@@ -87,7 +89,7 @@ export default {
       }).then(res => {
         console.log("日志列表");
         console.log(res);
-        
+        that.loading = false;
         that.redictToLogin(res,that);// 退出到登录页
 
         res.data.map(item=>{
@@ -99,15 +101,16 @@ export default {
       });
     },
     onSubmit(){
+      this.pageIndex = 1;
       this.getLogList();
     },
     handleSizeChange(size){
       this.pageSize = size;
-      this.onSubmit();
+      this.getLogList();
     },
     handleCurrentChange(page){
       this.pageIndex = page;
-      this.onSubmit();
+      this.getLogList();
     },
   },
 };

@@ -31,7 +31,7 @@ module.exports = app => {
   exports.keys = '123456';
 
   exports.middleware = [
-    'access', 'errorHandler','checkLogin'
+    'access', 'errorHandler','checkLogin','saveSession'
   ];
 
   exports.mysql = {
